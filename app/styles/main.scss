@@ -1,0 +1,81 @@
+$icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
+// bower:scss
+@import "bootstrap-sass-official/assets/stylesheets/_bootstrap.scss";
+// endbower
+
+.flex{
+  display: flex;
+  flex-wrap:wrap;
+}
+
+.books{
+  max-width: 150px;
+  margin:20px;
+  border-bottom: 2px solid transparent;  
+  box-sizing:border-box;
+  cursor: pointer;
+     &:hover {
+        border-bottom:2px solid #f00;   
+        }   
+}
+
+.bookAdded {
+   	opacity:0.2;
+   	background-color:#d3d3d3;
+}
+
+.books.ng-move,
+.books.ng-enter,
+.books.ng-leave {
+  -webkit-transition:all linear 0.5s;
+  transition:all linear 0.5s;
+}
+
+.books.ng-leave.ng-leave-active,
+.books.ng-move,
+.books.ng-enter {
+  opacity:0;
+}
+
+.books.ng-leave,
+.books.ng-move.ng-move-active,
+.books.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+video {
+	min-width:100%;
+	min-height:100%;
+}
+
+.slide-panel {
+    background:#eee;
+    z-index:2;
+    position:absolute;    
+}
+
+.slide-content {
+  display:none;
+}
+
+#opener {
+    margin:-10px -50px 0px 0px;
+    border-radius:0;
+}
+
+.bookcontrols{
+  a {
+    color: #d3d3d3;
+    cursor: pointer;
+  }  
+}
+
+.brand-name {
+  font-family: 'Shadows Into Light', cursive;
+  font-size: 42px;
+}
+
+.navbar-default{
+  background-color: darkorange;
+  min-height:80px;
+}
